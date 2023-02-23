@@ -7,10 +7,12 @@ package interfacesgraficas;
 
 import java.util.Scanner;
 
-
-public class InterfacesGraficas {
-
-  public static void main(String[] args) {
+/**
+ *
+ * @author ASUS
+ */
+public class Calculadora {
+    public static void main(String[] args) {
 
     int b = 0, opc;
     float n1 = 0, n2 = 0;
@@ -36,37 +38,37 @@ public class InterfacesGraficas {
         System.out.println("ingrese expoenete");
         n2 = sc.nextFloat();
       }
-      Operaciones opera = new Operaciones(n1, n2);
+      
       switch (opc) {
         case 1:
-          System.out.println(opera.sumar());
+          System.out.println(n1+n2);
           break;
         case 2:
-          System.out.println(opera.restar());
+          System.out.println(n1-n2);
           break;
         case 3:
-          System.out.println(opera.multiplicar());
+          System.out.println(n1*n2);
           break;
         case 4:
-          System.out.println(opera.dividir());
+          System.out.println(n1/n2);
           break;
         case 5:
-          System.out.println(opera.modulo());
+          System.out.println(n1%n2);
           break;
         case 6:
-          System.out.println(opera.raiz());
+          System.out.println(Math.sqrt(n1));
           break;
         case 7:
-          System.out.println(opera.sin());
+          System.out.println(Math.sin(n1));
           break;
         case 8:
-          System.out.println(opera.cos());
+          System.out.println(Math.cos(n1));
           break;
         case 9:
-          System.out.println(opera.tan());
+          System.out.println(Math.tan(n1));
           break;
         case 10:
-          System.out.println(opera.exp());
+          System.out.println(Math.pow(n1,n2));
           break;
         default:
           b = 1;
