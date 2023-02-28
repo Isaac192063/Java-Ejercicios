@@ -5,6 +5,8 @@
  */
 package estructura;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ASUS
@@ -233,6 +235,13 @@ public class Arrays extends javax.swing.JFrame {
 
   public void getIndex() {
     this.index++;
+//   int t=   JOptionPane.showInputDialog(null, "diga re") //es como cualquier textField
+//mensajes>: JOptiopn show Mensage
+//en el tercer parametreo es rootPane
+//crear botonres que hagan: 
+//hacer que se sumen todos los valores del arreglo y se muestren los resultados;
+//que diga de todos los valores cual es el mayor valor y donde se encuentra
+// tomar el arreglo e identificar que valores estan repetidos
   }
 
   /**
